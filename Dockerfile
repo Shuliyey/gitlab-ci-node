@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:boron-alpine
 
 RUN yarn install -g jshint mocha ionic cordova
 
