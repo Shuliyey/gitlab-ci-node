@@ -1,6 +1,6 @@
 FROM node:boron-alpine
 
-RUN yarn install -g jshint mocha ionic cordova
+RUN yarn add -g jshint mocha ionic cordova
 
 ENTRYPOINT []
 
