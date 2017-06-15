@@ -1,8 +1,6 @@
 FROM node:boron-alpine
 
-RUN yarn add -g jshint mocha ionic cordova tslint typescript
-
-RUN rm -rf package.json yarn.lock
+RUN yarn global add jshint mocha ionic cordova tslint typescript
 
 ENTRYPOINT []
 
