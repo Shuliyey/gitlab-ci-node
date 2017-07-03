@@ -1,6 +1,9 @@
 FROM node:boron-alpine
 
-RUN yarn global add jshint mocha ionic cordova tslint typescript
+RUN apk add --update git \
+  && yarn global add jshint mocha ionic cordova tslint typescript \
+  && rm -rf ~/* \
+  && rm -rf /var/cache/apk/*
 
 ENTRYPOINT []
 
